@@ -193,6 +193,7 @@ img{
 }
 
 /* section */
+/* Особливості */
 
 .section {
     padding-top: 94px;
@@ -215,29 +216,18 @@ img{
     margin-right: 30px;
 }
 
-.feature-list .item::before {
-    display: block;
+/* .container-icon {
     margin-bottom: 30px;
-    content: '';
+    width: 270px;
     height: 120px;
     background-color: var(--secondary-bg-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-.icon-antenna::before {
-    background-image: url(../img/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../img/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../img/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../img/astronaut.svg);
-}
+} */
  
+/* .feature-icon {
+width: 70px;
+height: 70px;
+} */
+
 .feature-list .title {
     margin-bottom: 10px;
 
