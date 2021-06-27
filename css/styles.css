@@ -147,10 +147,24 @@ img{
 /* hero */
 
 .hero {
-    background-color: var(--hero-bg-color);
-    text-align: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
+
+    background-color: var(--hero-bg-color);
+    background-image: linear-gradient( 
+        to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+      ), 
+      url(../img/Hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
     
 
@@ -201,6 +215,29 @@ img{
     margin-right: 30px;
 }
 
+.feature-list .item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: '';
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.icon-antenna::before {
+    background-image: url(../img/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../img/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../img/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../img/astronaut.svg);
+}
+ 
 .feature-list .title {
     margin-bottom: 10px;
 
@@ -322,8 +359,11 @@ img{
 }
 
 .menu-list .button {
+    border: none;
+    border-radius: 4px;
     background-color: var(--secondary-bg-color);
     color: inherit;
+    
 
     font-family: inherit;
     font-weight: 500;
@@ -338,6 +378,7 @@ img{
 .menu-list .button:active{
     background-color: var(--accent);
     color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .example-list {
